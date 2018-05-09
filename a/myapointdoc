@@ -1,0 +1,9 @@
+<?php
+include "mainpage.php";
+session_start();
+if(isset($_SESSION['doc_id1'])){
+	$id = $_SESSION['doc_id1'];
+}else{
+	header('location:doctorlogin1.php');
+}
+?>
